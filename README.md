@@ -11,7 +11,7 @@ Prerequisites to run the jar files:
 What You’ll Need:
 -Firefox 46: https://ftp.mozilla.org/pub/firefox/releases/46.0/
 -Java Development Kit (JDK) 8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
--Runnable JAR files from Github storage: https://github.com/deitydeelight/
+-Runnable JAR files from Github storage: https://github.com/deitydeelight/Docler_interview_test
 -CMD promt
 
 
