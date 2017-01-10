@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+.failed {color: red; background-color: #ffcccc;}
+.passed {color: green; background-color: #ccffcc;}
+.done {color: #404040; background-color: #ccffcc;}
+.comment {color: #404040; background-color: #d0d0d0;}
+body, table { font-family: Verdana, Arial, sans-serif; font-size: 12pt; }
+table { border-collapse: collapse; border: 1px solid #ccc; }
+th, td { padding-left: 0.3em; padding-right: 0.3em; border: 1px solid #ccc; }
+#suiteSummaryTable thead { font-size: 14pt; font-weight: 800; }
+.test_case thead { font-size: 14pt; font-weight: 400; }
+</style>
+</head>
+<body>
+<table id="suiteSummaryTable" class="selenium">
+<thead><tr class="failed"><td>Test Suite</td></tr></thead>
+<tbody>
+<tr><td>Test cases: 12 total / <span class="passed">9</span> passed / <span class="failed">3</span> failed</td></tr>
+<tr><td>Commands: 71 total / <span class="passed">66</span> passed / <span class="failed">5</span> failed / <span class="skipped">0</span> skipped</td></tr>
+</tbody></table><br>
+<table id="suiteTable" class="selenium">
+<thead><tr><td>Index of test cases</td></tr></thead>
+<tbody>
+<tr class="passed"><td><a href="#test0">Check Form button state after click - REQ-06</a></td></tr>
+<tr class="passed"><td><a href="#test1">Check Home button state after click - REQ-04</a></td></tr>
+<tr class="passed"><td><a href="#test2">Check text visibility on the Home page - REQ-09</a></td></tr>
+<tr class="failed"><td><a href="#test3">Company Logo visibility check - REQ-02</a></td></tr>
+<tr class="passed"><td><a href="#test4">Error button functionality - REQ-07</a></td></tr>
+<tr class="passed"><td><a href="#test5">Form button functionality - REQ-05</a></td></tr>
+<tr class="passed"><td><a href="#test6">Form page check - REQ-11</a></td></tr>
+<tr class="passed"><td><a href="#test7">Hello page check - REQ-12</a></td></tr>
+<tr class="passed"><td><a href="#test8">Home button functionality - REQ-03</a></td></tr>
+<tr class="failed"><td><a href="#test9">Logo functionality - REQ-08</a></td></tr>
+<tr class="failed"><td><a href="#test10">Title check - REQ-01</a></td></tr>
+<tr class="passed"><td><a href="#test11">Verify the corrext text visibility on the Home page - p tag - REQ-10</a></td></tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test0"></a><table class="test_case"><thead><tr><td colspan="4">Test case: Check Form button state after click - REQ-06</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAtAndWait</td>
+	<td>id=form</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertTextNotPresent</td>
+	<td>css=h1</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test1"></a><table class="test_case"><thead><tr><td colspan="4">Test case: Check Home button state after click - REQ-04</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAtAndWait</td>
+	<td>id=home</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertElementNotPresent</td>
+	<td>id=hello_form</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test2"></a><table class="test_case"><thead><tr><td colspan="4">Test case: Check text visibility on the Home page - REQ-09</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Welcome to the Docler Holding QA Department</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test3"></a><table class="test_case"><thead><tr><td colspan="4">Test case: Company Logo visibility check - REQ-02</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyElementPresent</td>
+	<td>id=dh_logo</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyElementPresent</td>
+	<td>id=dh_logo</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/hello.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyElementPresent</td>
+	<td>id=dh_logo</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/error</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="failed">
+	<td>verifyElementPresent</td>
+	<td>id=dh_logo</td>
+	<td></td>
+	<td>false</td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test4"></a><table class="test_case"><thead><tr><td colspan="4">Test case: Error button functionality - REQ-07</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAtAndWait</td>
+	<td>id=error</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyLocation</td>
+	<td>http://uitest.duodecadits.com/error</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyTextPresent</td>
+	<td>404</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAtAndWait</td>
+	<td>id=error</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyLocation</td>
+	<td>http://uitest.duodecadits.com/error</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyTextPresent</td>
+	<td>404</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test5"></a><table class="test_case"><thead><tr><td colspan="4">Test case: Form button functionality - REQ-05</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAtAndWait</td>
+	<td>id=form</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyLocation</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAtAndWait</td>
+	<td>id=form</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyLocation</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test6"></a><table class="test_case"><thead><tr><td colspan="4">Test case: Form page check - REQ-11</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyVisible</td>
+	<td>id=hello-input</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyVisible</td>
+	<td>id=hello-submit</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test7"></a><table class="test_case"><thead><tr><td colspan="4">Test case: Hello page check - REQ-12</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=hello-input</td>
+	<td>John</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>id=hello-submit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyText</td>
+	<td>id=hello-text</td>
+	<td>Hello John!</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=hello-input</td>
+	<td>Sophia</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>id=hello-submit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyText</td>
+	<td>id=hello-text</td>
+	<td>Hello Sophia!</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=hello-input</td>
+	<td>Charlie</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>id=hello-submit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyText</td>
+	<td>id=hello-text</td>
+	<td>Hello Charlie!</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=hello-input</td>
+	<td>Emily</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>id=hello-submit</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyText</td>
+	<td>id=hello-text</td>
+	<td>Hello Emily!</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test8"></a><table class="test_case"><thead><tr><td colspan="4">Test case: Home button functionality - REQ-03</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAtAndWait</td>
+	<td>id=home</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyLocation</td>
+	<td>http://uitest.duodecadits.com/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAtAndWait</td>
+	<td>id=home</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyLocation</td>
+	<td>http://uitest.duodecadits.com/</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test9"></a><table class="test_case"><thead><tr><td colspan="4">Test case: Logo functionality - REQ-08</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="failed">
+	<td>clickAndWait</td>
+	<td>id=dh_logo</td>
+	<td></td>
+	<td>Timed out after 5000ms</td>
+</tr>
+<tr class="passed">
+	<td>verifyLocation</td>
+	<td>http://uitest.duodecadits.com/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="failed">
+	<td>clickAndWait</td>
+	<td>id=dh_logo</td>
+	<td></td>
+	<td>Timed out after 5000ms</td>
+</tr>
+<tr class="failed">
+	<td>verifyLocation</td>
+	<td>http://uitest.duodecadits.com/</td>
+	<td></td>
+	<td>Actual value 'http://uitest.duodecadits.com/form.html' did not match 'http://uitest.duodecadits.com/'</td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test10"></a><table class="test_case"><thead><tr><td colspan="4">Test case: Title check - REQ-01</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyTitle</td>
+	<td>UI Testing Site</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/form.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyTitle</td>
+	<td>UI Testing Site</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/hello.html</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyTitle</td>
+	<td>UI Testing Site</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com/error</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="failed">
+	<td>verifyTitle</td>
+	<td>UI Testing Site</td>
+	<td></td>
+	<td>Actual value '404 Error: File not found :-)' did not match 'UI Testing Site'</td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test11"></a><table class="test_case"><thead><tr><td colspan="4">Test case: Verify the corrext text visibility on the Home page - p tag - REQ-10</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://uitest.duodecadits.com</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyText</td>
+	<td>css=p.lead</td>
+	<td>This site is dedicated to perform some exercises and demonstrate automated web testing.</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+</body></html>

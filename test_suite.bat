@@ -1,0 +1,12 @@
+java -jar HomeButtonFunctionalityREQ03.jar
+java -jar FormButtonFunctionalityREQ05.jar
+java -jar ErrorButtonFunctionalityREQ07.jar
+java -jar LogoFunctionalityREQ08.jar
+java -jar FormPageCheckREQ11.jar
+java -jar HelloPageCheckREQ12.jar
+java -jar TitleCheckREQ01.jar
+java -jar CompanyLogoVisibilityCheckREQ02.jar
+java -jar CheckHomeButtonStateAfterClickREQ04.jar
+java -jar CheckFormbuttonStateAfterClickREQ06.jar
+java -jar CheckTextVisibilityOnTheHomePageREQ09.jar
+java -jar VerifyTheCorrextTextVisibilityOnTheHomePagePTagREQ10.jar
